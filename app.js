@@ -9,6 +9,10 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+/*
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -36,6 +40,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
+});*/
 
 module.exports = app;
